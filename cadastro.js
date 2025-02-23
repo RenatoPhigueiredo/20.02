@@ -22,10 +22,10 @@ document.addEventListener("DOMContentLoaded", function () {
             form.reset();
         }
     });
-// Adiciona eventos de clique para editar e excluir
+
 userList.addEventListener("click", function (event) {
     if (event.target.classList.contains("delete")) {
-    event.target.parentElement.remove(); // Remove o item da lista
+    event.target.parentElement.remove();
     } else if (event.target.classList.contains("edit")) {
     const listItem = event.target.parentElement;
     const userData = listItem.textContent.split(" - ");
